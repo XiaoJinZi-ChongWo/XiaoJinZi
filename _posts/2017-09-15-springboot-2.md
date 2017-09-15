@@ -29,7 +29,7 @@ categories: jekyll update
         - [x] 类目管理
         - [x] 其他
         
-    > ![functionModel]({{ site.url }}/XiaoJinZi/downloads/functionModel.png)
+    > ![functionModel](/downloads/functionModel.png)
 
   - 1.3 部署架构
     
@@ -46,7 +46,7 @@ categories: jekyll update
 
 - **2.架构与基础框架**
   - 2.1 架构演进
-    > ![frameWork]({{ site.url }}/XiaoJinZi/downloads/frameWork.png)
+    > ![frameWork](/downloads/frameWork.png)
   - 2.2 基本框架
     - [x] 阿里系
         - [1] Duboo(服务化治理)
