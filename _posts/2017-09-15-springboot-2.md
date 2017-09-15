@@ -46,7 +46,7 @@ categories: jekyll update
 
 - **2.架构与基础框架**
   - 2.1 架构演进
-    > ![frameWork](/downloads/frameWork.png)
+    > ![frameWork]({{site.url}}/XiaoJinZi/downloads/frameWork.png)
   - 2.2 基本框架
     - [x] 阿里系
         - [1] Duboo(服务化治理)
