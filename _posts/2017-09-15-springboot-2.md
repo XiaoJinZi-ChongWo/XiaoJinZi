@@ -29,7 +29,7 @@ categories: jekyll update
         - [x] 类目管理
         - [x] 其他
         
-    > ![functionModel](/downloads/functionModel.png)
+    > ![functionModel]({{site.url}}/downloads/functionModel.png)
 
   - 1.3 部署架构
     
@@ -46,6 +46,7 @@ categories: jekyll update
 
 - **2.架构与基础框架**
   - 2.1 架构演进
+  
     > ![frameWork]({{site.url}}/downloads/frameWork.png)
   - 2.2 基本框架
     - [x] 阿里系
