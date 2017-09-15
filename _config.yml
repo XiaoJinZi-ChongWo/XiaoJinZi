@@ -17,7 +17,7 @@ title: 小金子博客
 email: 986209501@qq.com
 description: > # this means to ignore newlines until "baseurl:"
   要青春活力，拒绝熬夜。
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: /XiaoJinZi
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  XiaoJinZi-ChongWo
 
