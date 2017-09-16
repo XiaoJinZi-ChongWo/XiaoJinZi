@@ -19,7 +19,7 @@ categories: jekyll update
   ruby -v
   ```
   **安装成功如图**
-  ![RubyPIC]({{site.url}/downloads/jekyllBlog/rubySuccess.png})
+  ![RubyPIC]({{site.url}}/downloads/jekyllBlog/rubySuccess.png})
   ***
   - #### 1.2 RubyGem安装
   [RubyGem.zip 提取码：8uox](http://pan.baidu.com/s/1eS6F8Hk)
@@ -31,19 +31,19 @@ categories: jekyll update
   cd 压缩文件路径
   ruby setup.rb
   ```
-  ![RubyGemSetUp]({{site.url}/downloads/jekyllBlog/RubyGem1.png)
+  ![RubyGemSetUp]({{site.url}}/downloads/jekyllBlog/RubyGem1.png)
   
   **版本查看**
   ``` cmd
   gem -v
   ```
-  ![RubyGemVer]({{site.url}/downloads/jekyllBlog/RubyGem2.png)
+  ![RubyGemVer]({{site.url}}/downloads/jekyllBlog/RubyGem2.png)
   
   **Jekyll安装**
   ``` cmd
   gem install jekyll
   ```
-  ![RubyGemJekyll]({{site.url}/downloads/jekyllBlog/RubyGem3.png)
+  ![RubyGemJekyll]({{site.url}}/downloads/jekyllBlog/RubyGem3.png)
   ***
 - ### 2. 搭建个人博客站点
   > [本文编写参考Jekyll官方文档](http://jekyll.com.cn/docs/home/)
@@ -95,9 +95,9 @@ Error fetching https://gems.ruby-china.org/:
   jekyll new XiaoJinZi
   jekyll server
   ```
-  ![FirstBlog]({{site.url}/downloads/jekyllBlog/BlogPicture.png)
+  ![FirstBlog]({{site.url}}/downloads/jekyllBlog/BlogPicture.png)
   
-  ![Success]({{site.url}/downloads/jekyllBlog/BlogSuccess.png)
+  ![Success]({{site.url}}/downloads/jekyllBlog/BlogSuccess.png)
   
   > 接下来就是将自己的markDown文件放入_post文件夹中，文件命名(2017-09-15-springboot-2)日期+项目名中间用-连接。同时文件内容开头需要设置如下
   
@@ -119,7 +119,7 @@ Error fetching https://gems.ruby-china.org/:
   ```
   这里登陆127.0.0.1：4000就能看到效果
   
-    ![BrowseOpen]({{site.url}/downloads/jekyllBlog/BrowsSuccess.png)
+    ![BrowseOpen]({{site.url}}/downloads/jekyllBlog/BrowsSuccess.png)
   
   - 2.2进阶教程
     通过github部署并发布项目，通过创建一个新的仓库，将文件上传。[github操作学习](http://www.imooc.com/learn/390)
@@ -128,7 +128,7 @@ Error fetching https://gems.ruby-china.org/:
 
     > 关于图片引用，根目录下创建一个新的文件夹，里面放上图片。需要通过使用{{site.url}}/图片文件夹/图片名。
     
-    ![photoUrl]({{site.url}/downloads/jekyllBlog/photoUrl.png)
+    ![photoUrl]({{site.url}}/downloads/jekyllBlog/photoUrl.png)
 
     
   
