@@ -129,6 +129,7 @@ Error fetching https://gems.ruby-china.org/:
 
     > 关于图片引用，根目录下创建一个新的文件夹，里面放上图片。需要通过使用{{site.url}}/图片文件夹/图片名。
     
+    
     ![photoUrl]({{site.url}}/downloads/jekyllBlog/photoUrl.png)
 
     
