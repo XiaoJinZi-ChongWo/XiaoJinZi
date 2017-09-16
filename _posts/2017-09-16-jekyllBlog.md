@@ -19,7 +19,8 @@ categories: jekyll update
   ruby -v
   ```
   **安装成功如图**
-  ![RubyPIC]({{site.url}}/downloads/jekyllBlog/rubySuccess.png})
+  
+  ![RubyPIC]({{site.url}}/downloads/jekyllBlog/rubySuccess.png)
   
   - #### 1.2 RubyGem安装
   [RubyGem.zip 提取码：8uox](http://pan.baidu.com/s/1eS6F8Hk)
