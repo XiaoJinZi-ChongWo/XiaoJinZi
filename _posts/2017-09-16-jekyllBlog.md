@@ -20,7 +20,7 @@ categories: jekyll update
   ```
   **安装成功如图**
   ![RubyPIC]({{site.url}}/downloads/jekyllBlog/rubySuccess.png})
-  ***
+  
   - #### 1.2 RubyGem安装
   [RubyGem.zip 提取码：8uox](http://pan.baidu.com/s/1eS6F8Hk)
   
@@ -44,7 +44,7 @@ categories: jekyll update
   gem install jekyll
   ```
   ![RubyGemJekyll]({{site.url}}/downloads/jekyllBlog/RubyGem3.png)
-  ***
+  
 - ### 2. 搭建个人博客站点
   > [本文编写参考Jekyll官方文档](http://jekyll.com.cn/docs/home/)
   
