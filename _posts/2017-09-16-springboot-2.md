@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "微信点餐"
-date:   2017-09-15 14:18:39 +0800
+date:   2017-09-16 10:23:39 +0800
 categories: jekyll update
 ---
 
@@ -9,10 +9,7 @@ categories: jekyll update
 - **1.项目设计**
   - 1.1 角色划分
   
-    ```
-    graph LR
-    A[买家-手机端]-->|点餐|B[卖家-pc端]
-    ```
+	![roleDefferentation]({{site.url}}/downloads/wechat_SpringBoot/roleDefferentation.png)
     
   - 1.2 功能模块划分
    
@@ -29,25 +26,16 @@ categories: jekyll update
         - [x] 类目管理
         - [x] 其他
         
-    ![functionModel]({{site.url}}/downloads/functionModel.png)
+    ![functionModel]({{site.url}}/downloads/wechat_SpringBoot/functionModel.png)
 
   - 1.3 部署架构
     
-    ```
-    graph TB
-    A[微信]
-    B[浏览器]
-    A-->C[Nginx]
-    B-->C
-    C-->D[tomcat]
-    D-->E[缓存服务器]
-    D-->F[Mysql]
-    ```
+     ![projectFramework]({{site.url}}/downloads/wechat_SpringBoot/projectFramework.png)
 
 - **2.架构与基础框架**
   - 2.1 架构演进
   
-    ![frameWork]({{site.url}}/downloads/frameWork.png)
+    ![frameWork]({{site.url}}/downloads/wechat_SpringBoot/frameWork.png)
   - 2.2 基本框架
     - [x] 阿里系
         - [1] Duboo(服务化治理)
