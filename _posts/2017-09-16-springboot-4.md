@@ -1,11 +1,12 @@
 ﻿---
 layout: post
-title:  "微信点餐-点单"
-date:   2017-09-20 10:23:39 +0800
-categories: java springboot wechat
+title:  "微信点餐"
+date:   2017-09-16 10:23:39 +0800
+categories: jekyll update
 ---
 
-##买家商品点单页面
+
+## 买家商品点单页面
 
 ### Dao层设计与开发
 - 实体类创建，与类目表一致，字段与数据库对应。
