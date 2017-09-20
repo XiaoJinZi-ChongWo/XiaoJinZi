@@ -1,19 +1,26 @@
-﻿# 买家商品
-
-标签（空格分隔）： java springboot wechat
-
+﻿---
+layout: post
+title:  "微信点餐-点单"
+date:   2017-09-20 10:23:39 +0800
+categories: java springboot wechat
 ---
+
+##买家商品点单页面
 
 ### Dao层设计与开发
 - 实体类创建，与类目表一致，字段与数据库对应。
 - 创建对应的映射类。这里我们会根据其中状态进行查询。
+
 ```java
 /** 根据状态查询. */
 List<ProductInfo> findByProductStatus(Integer productStatus);
 ```
+
 ### Service层设计与开发
+
 - 关于业务层，这里就要考虑卖家和买家的业务了，其中买家可以看到上架的商品，订单库存增删，买家后台管理中分页查询所有数据，商品信息添加。
 - 状态查询我们用‘0’代表上架和‘1’代表下架。这里采用枚举的方式：
+
 ```java
 @Getter
 public enum ProductInfoEnum {
@@ -31,7 +38,9 @@ public enum ProductInfoEnum {
     }
 }
 ```
+
 - 其中关于分页查询，采用Page<>类。其中传值为Pageable,具体通过PageRequest(第几页,每页显示数);
+
 ```java
 public Page<ProductInfo> findAll(Pageable pageable) {
         return repository.findAll(pageable);
@@ -47,7 +56,9 @@ public void findAll() throws Exception {
 ```
 
 ### Controller层设计与开发
+
 - 买家商品Api，Api大家肯定都知道封装数据。这里我们采用封装成Jason格式。
+
 ```jason
 { 
     code: 0 ,
@@ -92,6 +103,7 @@ public void findAll() throws Exception {
 
 - 这里只是示例，具体按公司要求来，封装数据这块是前后台交互，前端与后端人员需先意见一致。
 - 买家端商品页面展示，这里逻辑实现：
+
 ```java
 @RequestMapping(value="/list")
 public ResultVo list(){
@@ -133,6 +145,7 @@ public ResultVo list(){
     return ResultVOUtil.success(productVOoList);
 }
 ```
+
 - 提示：
 1. 数据封装只封装Api中需要的值，所以这里我们需要建立新的实体类。
 2. 数据查询，我们遵循一次查询内容，后做循环处理结果，保证程序高效性。
@@ -140,13 +153,16 @@ public ResultVo list(){
 4. chrome中添加JSONview插件获取与安装[点击这里](http://blog.csdn.net/yy228313/article/details/50535246)。
 
 - 前端交互，访问虚拟机的ip地址，此时会弹出请微信端访问，这里我们通过添加修改缓存方式访问页面过滤。
+
 ```js
 /** url:虚拟机IP/#/order */
 /** F12开发者模式，在console中输入*/
 document.cookie='openid=abc123';
 /** 此时在输入虚拟机地址直接可以访问 */
 ```
+
 - 接下来就是虚拟机了（前后端数据对接），原视频UP主虽然所有的虚拟机设置都弄好了，但对于我这个虚拟机小白来说，基本的命令都不知道。这里各种坑，自己一点点给填上了，关于centos中dos基础入门，[点击这里](http://jingyan.baidu.com/article/495ba8410ff14d38b30ede01.html)。
+
 ```cmd
 vim /usr/local/nginx/conf/nginx.conf
 /** 按I右下角会出现Insert，此时开启编辑状态 */
@@ -157,8 +173,10 @@ vim /usr/local/nginx/conf/nginx.conf
 nginx -s reload
 /** 重启nginx */
 ```
+
 - 网页访问虚拟机地址，会返现数据对接上,这里又是一个坑,504错误,找来找去，最后是防火强未关，请求不到本机。
 - 最后一个就是关于微信官方采用域名对接,虚拟机中修改nginx中设置域名。
+
 ```cmd
 vim /usr/local/nginx/conf/nginx.conf
 /** 按I右下角会出现Insert，此时开启编辑状态 */
@@ -168,6 +186,7 @@ vim /usr/local/nginx/conf/nginx.conf
 nginx -s reload
 /** 重启nginx */
 ```
+
 - 本机设置输入指定sell.com会跳转虚拟机的ip地址。访问路径C:\WINDOWS\system32\drivers\etc 管理员权限在最后一行添加 虚拟机IP sell.com 保存。详细教程[点击这里](http://blog.csdn.net/u010234516/article/details/52963954)。
 
 ----------
